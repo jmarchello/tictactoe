@@ -1,5 +1,9 @@
 fn main() {
     let board = [[" "; 3]; 3];
+    display_board(&board);
+}
+
+fn display_board(board: &[[&str; 3]; 3]) {
     println!("\n");
     println!(" {} | {} | {}", board[0][0], board[0][1], board[0][2]);
     println!("------------");
